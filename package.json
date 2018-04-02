@@ -1,0 +1,17 @@
+{
+	"name": "GA-Project-Two",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/zw-zack/GA-Project-Two.git",
+	"author": "zw-zack <zhengwin94@hotmail.com>",
+	"dependencies": {
+		"bcrypt": "^1.0.3",
+		"cookie-parser": "^1.4.3",
+		"express": "^4.16.3",
+		"express-handlebars": "^3.0.0",
+		"jsonfile": "^4.0.0",
+		"method-override": "^2.3.10",
+		"pg": "^7.4.1"
+	},
+	"license": "MIT"
+}

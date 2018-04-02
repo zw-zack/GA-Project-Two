@@ -1,0 +1,8 @@
+.container {
+	cursor: pointer;
+	text-align: center;
+}
+
+.navbar {
+	background-color: gray;
+}
