@@ -6,3 +6,36 @@
 .navbar {
 	background-color: gray;
 }
+
+.navmenu {
+	color: white;
+}
+
+.navbutton {
+	background-color: gray;
+	color: white;
+	text-decoration: none;
+
+
+}
+
+.button {
+	padding: 10px 20px 10px 20px;
+	background-color: #0f487f;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+}
+
+#noregis {
+	font-weight: 50;
+}
+
+#taketest {
+	color: gray;
+}
+
+.quotes {
+	font-style: italic;
+}
