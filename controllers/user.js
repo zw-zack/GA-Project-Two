@@ -3,7 +3,7 @@
  * Controller logic
  * ===========================================
  */
-const newForm = (request, response) => {
+ const newForm = (request, response) => {
   response.render('user/new');
 };
 
@@ -16,7 +16,7 @@ const create = (db) => {
       // (you can choose to omit it completely from the function parameters)
 
       if (error) {
-        console.error('error getting pokemon:', error);
+        console.error('error:', error);
         response.sendStatus(500);
       }
 
@@ -45,10 +45,21 @@ const loginForm = (request, response) => {
   response.render('user/login');
 };
 
-const login = (request, response) => {
-  // TODO: Add logic here
-  // Hint: All SQL queries should happen in the corresponding model file
-  // ie. in models/user.js - which method should this controller call on the model?
+const login = (db) => {
+  return (request, response) => {
+    console.log(request.body)
+    db.user.login(request.body, (error, queryResult) => {
+      console.log('ok');
+      if (error) {
+        console.error('error:', error);
+        response.sendStatus(500);
+      }
+      response.cookie('loggedIn', true);
+      response.cookie('username', request.body.name);
+
+      response.redirect('/');
+    });
+  };
 };
 
 /**
@@ -56,7 +67,7 @@ const login = (request, response) => {
  * Export controller functions as a module
  * ===========================================
  */
-module.exports = {
+ module.exports = {
   newForm,
   create,
   logout,

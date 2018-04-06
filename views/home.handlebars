@@ -9,18 +9,26 @@
 	<title>PersonalityBookClub</title>
 </head>
 <body>
-
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<img src="img/bookLogo.jpeg" alt="Book Logo" width="80" height="40">
-				<img src="img/mypersonalitytest.jpg" alt="My Personailty Test Logo" width="80" height="40">
+				<a href="/" class="navbutton">
+					<img src="/img/bookLogo.jpeg" alt="Book Logo" width="80" height="40">
+					<img src="/img/mypersonalitytest.jpg" alt="My Personailty Test Logo" width="80" height="40">
+				</a>
 			</div>
 			<div class="col-sm-5">
 				<p> </p>
 			</div>
 			<div class="col-sm-1">
-				<h4>Log In</h4>
+				<a href="/users/login">
+					<h4>Log In</h4>
+				</a>
+			</div>
+			<div class="col-sm-1">
+				<a href="/users/new">
+					<h4>Sign Up</h4>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -28,7 +36,7 @@
 	<div class="container navbar">
 		<div class="row">
 			<div class="col-sm-3 navmenu">
-				<h3>Take the test</h3>
+				<a href="/form" class="navbutton"><h3>Take the test</h3></a>
 			</div>
 			<div class="col-sm-3 navmenu">
 				<a href="/personalities" class="navbutton"><span><h3>Personality types</h3></span></a>
@@ -46,9 +54,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<img src="img/home-16personalities.png" alt="16 Personalities" width="520" height="420">
+				<img src="/img/home-16personalities.png" alt="16 Personalities" width="520" height="420">
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-5 col-sm-offset-1">
 				<h3 class="quotes">
 					It's Wonderful to be loved, but it's profound to be understood. 
 					<br>
@@ -66,14 +74,18 @@
 				</h4>
 				<br><br>
 
-
-
 				<h4 id="taketest">
 					Take our personality test and find out which books suits you the best! <br>
 				</h4>
 				<h5 id="noregis">Free. No registration required.</h5>
-				<a href="#" class="button"><span>Take the test </span></a>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-5 col-sm-offset-7">
+				<a href="/form" class="button"><span>Take the test </span></a>
+
+			</div>
+			
 		</div>
 	</div>
 
