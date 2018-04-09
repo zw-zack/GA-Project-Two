@@ -324,4 +324,7 @@ ol.labels-list > li:before {
 	counter-increment: li-counter;
 }
 
+.credits {
+	text-align: left;
+}
 

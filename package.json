@@ -1,5 +1,11 @@
 {
 	"name": "GA-Project-Two",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"engines" : {
+		"node" : "^6.6.0"
+	},
 	"version": "1.0.0",
 	"main": "index.js",
 	"repository": "https://github.com/zw-zack/GA-Project-Two.git",

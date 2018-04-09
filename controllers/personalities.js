@@ -8,7 +8,12 @@
   response.render('personalities/all')
  }
 
+ const about = (request,response) =>{
+ 	response.render('about')
+ }
+
 module.exports = {
-  allPersonalities
+  allPersonalities,
+  about
 };
 

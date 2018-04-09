@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const cookieParser = require('cookie-parser');
 const db = require('./db');
+const PORT = process.env.PORT || 5000;
+
+
 
 // Init express app
 const app = express();
@@ -21,6 +24,8 @@ app.set('view engine', 'handlebars');
 // Import routes to match incoming requests
 require('./routes')(app, db);
 
+
+
 // Root GET request (it doesn't belong in any controller file)
 app.get('/', (request, response) => {
   response.render('home');
@@ -32,7 +37,7 @@ app.get('*', (request, response) => {
 });
 
 
- const server = app.listen(5000, () => console.log('~~~ Tuning in to the waves of port 5000 ~~~'));
+const server = app.listen(PORT, () => console.log('~~~ Tuning in to the waves of port '+PORT+' ~~~'));
 
 // Run clean up actions when server shuts down
 server.on('close', () => {

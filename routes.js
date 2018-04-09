@@ -20,6 +20,9 @@ module.exports = (app, db) => {
   // All personality types
   app.get('/personalities', personalities.allPersonalities);
 
+  //About page
+  app.get('/about', personalities.about);
+
   // Personality test form
   app.get('/form', form.createForm);
   app.post('/form', form.results);

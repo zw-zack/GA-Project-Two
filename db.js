@@ -1,5 +1,6 @@
 const pg = require('pg');
 const user = require('./models/user');
+
 const configs = {
   user: 'chuazhengwin',
   host: '127.0.0.1',
